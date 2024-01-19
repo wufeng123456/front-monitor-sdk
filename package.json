@@ -1,0 +1,29 @@
+{
+  "name": "front-monitor-sdk",
+  "version": "1.0.0",
+  "description": "sdk for web-front monitor",
+  "main": "lib/monitor.js",
+  "scripts": {
+    "build:lib": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wufeng123456",
+  "files": [
+    "src",
+    "lib"
+  ],
+  "repository": {
+    "url": "https://github.com/wufeng123456/front-monitor-sdk.git"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.23.8",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "@babel/core": "^7.23.7",
+    "babel": "^6.23.0",
+    "babel-loader": "^9.1.3"
+  }
+}
