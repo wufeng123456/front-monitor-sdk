@@ -1,6 +1,6 @@
 {
   "name": "front-monitor-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "sdk for web-front monitor",
   "main": "lib/monitor.js",
   "scripts": {
