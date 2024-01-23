@@ -25,8 +25,8 @@ init({
   delay: 0, // 延迟并且合并上传
   hashPage: false, // 是否hash路由
   errorReport: true, // 是否开启错误上报
-  blankReport, // 是否开启白屏监控, 未添加路由监听，需刷新页面触发
-  rootElements, // 开启白屏监控后，需传入判断白屏的元素标识，默认html、body 未添加路由监听，需刷新页面触发
+  blankReport: true, // 是否开启白屏监控, 未添加路由监听，需刷新页面触发
+  rootElements: ['#root', '.app'], // 开启白屏监控后，需传入判断白屏的元素标识，默认html、body 未添加路由监听，需刷新页面触发
   performanceReport, // 开启性能监控，未添加路由监听，需刷新页面触发
 })
 ```
