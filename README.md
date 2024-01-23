@@ -24,7 +24,10 @@ init({
   autoActionTracker: false, // 操作日志是否开启自动采集
   delay: 0, // 延迟并且合并上传
   hashPage: false, // 是否hash路由
-  errorReport: true // 是否开启错误上报
+  errorReport: true, // 是否开启错误上报
+  blankReport, // 是否开启白屏监控, 未添加路由监听，需刷新页面触发
+  rootElements, // 开启白屏监控后，需传入判断白屏的元素标识，默认html、body 未添加路由监听，需刷新页面触发
+  performanceReport, // 开启性能监控，未添加路由监听，需刷新页面触发
 })
 ```
 
@@ -56,7 +59,7 @@ actionTrackerReport(param1, param2)
 const logParams = {
   appId, //项目id
   userId, // 用户id
-  type, // error|action|visit|user
+  type, // error|action|visit|user|performance
   data: params,
   currentTime: new Date().getTime(), // 时间戳
   currentPage: window.location.href, // 当前页面
